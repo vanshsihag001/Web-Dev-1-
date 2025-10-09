@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <!-- 2. Color Theme & Fonts: Importing Google Fonts (Roboto) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- 1. Link External CSS file here -->
+    <link rel="stylesheet" href="style_external.css">
+</head>
+<body>
+
+    <!-- Header now contains both the title and the nav, meeting the merge requirement -->
+    <header>
+        <div class="container header-title">
+            <!-- The H1 styling is applied via the external CSS now -->
+            <h1>My Portfolio</h1>
+        </div>
+        <nav>
+            <div class="container nav-content">
+                <!-- Navigation links -->
+                <a href="#about">About Me</a>
+                <a href="#skills">My Skills</a>
+                <a href="#projects">My Projects</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+        
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="profile-card">
+                <!-- Placeholder image for profile photo -->
+                <img src="./ocho's photo.jpg" alt="Profile Picture" class="profile-pic">
+                <p>
+                    Hello! My name is Vansh Sihag. I am a passionate Web Development student.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <!-- Basic Layout: Centered table -->
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Skills</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-item">
+                <h3>Project 1</h3>
+                <p>A simple HTML and CSS webpage</p>
+            </div>
+            
+            <div class="project-item">
+                <h3>Project 2</h3>
+                <p>Another awesome mini project</p>
+            </div>
+        </section>
+
+<div class="centerContainer">
+            <div class="contact-container">
+                <h2 class="contact-title">Contact Me</h2>
+
+                <form class="contact-form"> 
+                    <!-- action="#" method="POST"  -->
+                    <table>
+                        <tr>
+                            <td class="label-cell">Name:</td>
+                            <td class="input-cell">
+                                <input type="text" name="name" placeholder="Enter your name">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="label-cell">Email:</td>
+                            <td class="input-cell">
+                                <input type="email" name="email" placeholder="Enter your email">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="label-cell">Message:</td>
+                            <td class="input-cell">
+                                <textarea name="message" placeholder="Write your message"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="button-cell">
+                                <button type="submit">Send</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        </form>    
+    <!-- Fixed Position Back to Top Button -->
+    <a href="#top" id="back-to-top" style="display: block;">Back to Top</a>
+
+</body>
+</html>
